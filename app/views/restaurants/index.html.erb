@@ -1,0 +1,10 @@
+<h1>Index </h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      CAPITANO <%= link_to restaurant.name, restaurant_path(restaurant)%>
+      </li>
+  <% end %>
+  <h2><%=link_to "BROSKI ADD A Resto", new_restaurant_path%></h2>
+</ul>
